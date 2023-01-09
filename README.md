@@ -113,9 +113,9 @@ cd blog-app-ror
 - Run `rails server`
 - Open Browser `http://localhost:3000/`
 
-#### .env File Structure
+### .env File Structure
 
-See the [.env.example file](./env.example)
+See the [.env.example file](.env.example)
 
 Replacing the variable values where needed (most importantly `username` and `password`)
 
