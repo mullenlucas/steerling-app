@@ -115,17 +115,7 @@ cd blog-app-ror
 
 #### .env File Structure
 
-This is the intended file content for the `.env` file:
-
-```
-POSTGRES_HOST='localhost'
-POSTGRES_USER='username'  # <-- replace here
-POSTGRES_PASSWORD='password'  # <-- replace here
-POSTGRES_DEV_DB='recipe_ror_app_dev'
-POSTGRES_TEST_DB='recipe_ror_app_test'
-POSTGRES_PROD_DB='recipe_ror_app_prod'
-# PROD_PASSWORD = 'production_password'
-```
+See the [.env.example file](./env.example)
 
 Replacing the variable values where needed (most importantly `username` and `password`)
 
