@@ -28,9 +28,9 @@
 
 # 📖 Steerling App <a name="about-project"></a>
 
-> This project creates a fully functional blog app website that shows the list of posts and empower readers to interact with them by adding comments and liking posts. Made with Ruby on Rails
+> The Steerling project is a mobile web application developed in ROR that lets users manage their budgets. Each category in the app has a list of transactions linked with it, allowing users to keep track of their outgoing costs.
 
-**Steerling App** is a blog application for sharing lessons and experiences on coding with Ruby on Rails!
+**Steerling App** is a bugdet application for users to manage their money transactions and balances
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -63,9 +63,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Posting Recipes** to share public and private user-created recipes
-- **Shopping** to trade plates
-- **Display** preparation and cooking time
+- **Custom categories** for each user
+- **Transactions** are displayed to show the balance of money
+- **Display** their expenditure on each category
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +100,7 @@ To get a local copy up and running, follow these steps.
 ### Clone the repository
 
 ```shell
-git clone https://github.com/mullenlucas/blog-app.ror.git
+git clone https://github.com/mullenlucas/steerling-app.git
 cd blog-app-ror
 ```
 
@@ -141,14 +141,6 @@ The user then can modify and play with the files as needed
 
 - GitHub: [@mullenlucas](https://github.com/mullenlucas)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-mullen-447312119/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- **Validations and Model specs**
-- **Setup and controllers**
-- **Views and Forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
