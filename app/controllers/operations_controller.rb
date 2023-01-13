@@ -1,25 +1,15 @@
 class OperationsController < ApplicationController
   before_action :set_operation, only: %i[show edit update destroy]
 
-  # GET /operations or /operations.json
-  def index
-    @operations = Operation.all
-  end
-
-  # GET /operations/1 or /operations/1.json
-  def show; end
-
   # GET /operations/new
   def new
     @operation = Operation.new
   end
 
-  # GET /operations/1/edit
-  def edit; end
-
   # POST /operations or /operations.json
   def create
     @operation = Operation.new(operation_params)
+    @operation.user_id = current_user.id
 
     respond_to do |format|
       if @operation.save
@@ -64,6 +54,6 @@ class OperationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def operation_params
-    params.fetch(:operation, {})
+    params.require(:operation).permit(:name, :amount, :user_id, category_ids: [])
   end
 end
