@@ -1,6 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
+  <img src="steerling-logo.png" alt="logo" width="240"  height="auto" />
+  <br/>
   <h3><b>Steerling App</b></h3>
 </div>
 
@@ -164,6 +166,7 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - To all the collaborators for the Readme Template
 - The Microverse Team
+- Logo created at [Free Logo Design](https://freelogocreator.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
