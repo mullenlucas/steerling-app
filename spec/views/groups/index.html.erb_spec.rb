@@ -24,7 +24,7 @@ RSpec.describe 'groups/index', type: :view do
   describe 'GET /categories' do
     it 'displays all categories' do
       expect(page).to have_content('Food')
-      expect(page).to have_content('ADD A NEW CATEGORY')
+      expect(page).to have_content('ADD NEW CATEGORY')
       expect(page).to have_content('Transactions: 0')
     end
 

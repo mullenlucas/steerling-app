@@ -3,6 +3,21 @@
   src: url('net-proxima_nova.ttf');
 }
 
+@font-face {
+  font-family: 'Light proxima nova';
+  src: url('proxima-nova-light.ttf');
+}
+
 body {
   font-family: 'Net proxima nova';
+}
+
+.notice {
+  font-family: 'Light proxima nova';
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #5fb523;
+  color: #fff;
 }
