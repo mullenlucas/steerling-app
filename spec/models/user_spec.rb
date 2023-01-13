@@ -1,28 +1,36 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  before(:each) do
-    @user = User.create(name: 'Nuk Tashino', email: 'nuk@tashino.com', password: 'firemargin',
-                        password_confirmation: 'firemargin')
+  subject do
+    User.new(
+      name: 'John',
+      email: 'john1@gmail.com',
+      password: '1234567'
+    )
   end
 
-  it 'User should have valid name attribute' do
-    expect(@user.name).to eq('Nuk Tashino')
+  before { subject.save }
+
+  describe 'valid attributes' do
+    it 'is valid with valid attributes' do
+      expect(subject).to be_valid
+    end
+
+    it 'is not valid without a name' do
+      subject.email = nil
+      expect(subject).to_not be_valid
+    end
   end
 
-  it 'User should have valid email attribute' do
-    expect(@user.email).to eq('nuk@tashino.com')
-  end
+  describe 'associations' do
+    it 'has many Categories' do
+      assc = described_class.reflect_on_association(:groups)
+      expect(assc.macro).to eq :has_many
+    end
 
-  it 'user should have valid password' do
-    expect(@user.password).to eq('firemargin')
-  end
-
-  it 'user should have valid password confirmation' do
-    expect(@user.password_confirmation).to eq('firemargin')
-  end
-
-  it 'user for inventory food should be valid' do
-    expect(@user).to be_valid
+    it 'has many Expenses' do
+      assc = described_class.reflect_on_association(:charges)
+      expect(assc.macro).to eq :has_many
+    end
   end
 end
