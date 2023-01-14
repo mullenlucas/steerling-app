@@ -124,7 +124,11 @@
   background-color: var(--color-secondary);
   display: flex;
   justify-content: center;
-  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 var(--color-main-darker);
+}
+
+.add-t-container:hover {
+  box-shadow: 4px 4px 6px 0 var(--color-main-light);
 }
 
 .add-transaction {
@@ -140,10 +144,16 @@
 
 .button-back {
   margin-top: 15px;
+  border: 2px solid var(--color-main);
+  padding: 10px;
+  box-shadow: 0 0 5px 0 var(--color-secondary-dark);
 }
 
 .back-to {
   color: #999;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1.4px;
 }
 
 .signout {
