@@ -3,20 +3,20 @@ require 'rails_helper'
 RSpec.describe 'relations/index', type: :view do
   before :each do
     @user = User.create(
-      name: 'Angel',
-      email: 'angel@gmail.com',
-      password: '1234567'
+      name: 'Nuk Tashino',
+      email: 'nuktashino@gmail.com',
+      password: 'lalala'
     )
 
     @category = @user.groups.create(
-      name: 'Food',
-      icon: 'http://fasfa-utensils',
+      name: 'Leather',
+      icon: 'https://picsum.photos/200',
       user_id: @user.id
     )
 
     @charge = Charge.create(
-      name: 'Mcdonalds',
-      amount: 100,
+      name: 'Imported leather',
+      amount: 60,
       author_id: @user.id
     )
 
@@ -32,10 +32,10 @@ RSpec.describe 'relations/index', type: :view do
   describe 'GET /relations between groups and charges' do
     it 'displays all transactions' do
       visit group_relations_path(@category.id)
-      expect(page).to have_content('Food')
-      expect(page).to have_content('Mcdonalds')
-      expect(page).to have_content('$100.0')
-      expect(page).to have_content('Add a new transaction')
+      expect(page).to have_content('Leather')
+      expect(page).to have_content('Imported leather')
+      expect(page).to have_content('$60.0')
+      expect(page).to have_content('ADD NEW TRANSACTION')
     end
   end
 end

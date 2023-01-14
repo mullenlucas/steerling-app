@@ -16,9 +16,9 @@ RSpec.describe '/charges', type: :request do
   include Devise::Test::IntegrationHelpers
   let(:user) do
     User.create(
-      name: 'Angel',
-      email: 'angel@gmail.com',
-      password: '1234567'
+      name: 'Izumi',
+      email: 'izumi@gmail.com',
+      password: 'xaxaxa'
     )
   end
 

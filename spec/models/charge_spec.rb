@@ -3,16 +3,16 @@ require 'rails_helper'
 RSpec.describe Charge, type: :model do
   let(:user) do
     User.create(
-      name: 'John',
-      email: 'john1@gmail.com',
-      password: '1234567'
+      name: 'Nuk Tashino',
+      email: 'nuktashino@gmail.com',
+      password: 'lalala'
     )
   end
 
   subject do
     Charge.new(
-      name: 'Rica sauce',
-      amount: 100,
+      name: 'Honeybrewed beer',
+      amount: 40,
       author_id: user.id
     )
   end

@@ -3,14 +3,14 @@ require 'rails_helper'
 RSpec.describe 'groups/index', type: :view do
   before :each do
     @user = User.create(
-      name: 'Angel',
-      email: 'angel@gmail.com',
-      password: '1234567'
+      name: 'Nuk Tashino',
+      email: 'nuktashino@gmail.com',
+      password: 'lalala'
     )
 
     @category = @user.groups.create(
-      name: 'Food',
-      icon: 'http://fasfa-utensils',
+      name: 'Leather',
+      icon: 'https://picsum.photos/200',
       user_id: @user.id
     )
 
@@ -23,7 +23,7 @@ RSpec.describe 'groups/index', type: :view do
 
   describe 'GET /categories' do
     it 'displays all categories' do
-      expect(page).to have_content('Food')
+      expect(page).to have_content('Leather')
       expect(page).to have_content('ADD NEW CATEGORY')
       expect(page).to have_content('Transactions: 0')
     end

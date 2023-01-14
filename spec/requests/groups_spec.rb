@@ -16,16 +16,16 @@ RSpec.describe '/groups', type: :request do
   include Devise::Test::IntegrationHelpers
   let(:user) do
     User.create(
-      name: 'angel',
-      email: 'angel@gmail.com',
-      password: '1234567'
+      name: 'Izumi',
+      email: 'izumi@gmail.com',
+      password: 'xaxaxa'
     )
   end
 
   let(:category) do
     user.categories.create(
-      name: 'Food',
-      icon: 'http://fasfa-utensils',
+      name: 'Quartz',
+      icon: 'https://picsum.photos/200',
       user_id: user.id
     )
   end

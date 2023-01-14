@@ -3,16 +3,16 @@ require 'rails_helper'
 RSpec.describe Group, type: :model do
   let(:user) do
     User.create(
-      name: 'John',
-      email: 'john1@gmail.com',
-      password: '1234567'
+      name: 'Nuk Tashino',
+      email: 'nuktashino@gmail.com',
+      password: 'lalala'
     )
   end
 
   subject do
     Group.new(
-      name: 'Food',
-      icon: 'http://fasfa-utensils',
+      name: 'Quartz',
+      icon: 'https://picsum.photos/200',
       user_id: user.id
     )
   end
@@ -25,7 +25,7 @@ RSpec.describe Group, type: :model do
     end
 
     it 'is not valid without a name' do
-      subject.name = 'Food'
+      subject.name = 'Quartz'
       expect(subject).to be_valid
     end
 
