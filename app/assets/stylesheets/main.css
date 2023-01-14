@@ -10,12 +10,12 @@
 }
 
 @font-face {
-  font-family: 'Net proxima nova';
+  font-family: 'Net proxima nova', sans-serif;
   src: url('net-proxima_nova.ttf');
 }
 
 @font-face {
-  font-family: 'Light proxima nova';
+  font-family: 'Light proxima nova', sans-serif;
   src: url('proxima-nova-light.ttf');
 }
 

@@ -22,6 +22,7 @@ body {
 .smash-btn:hover {
   background-color: var(--color-main-darker);
 }
+
 .splash-section {
   display: flex;
   flex-direction: column;
