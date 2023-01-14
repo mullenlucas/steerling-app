@@ -36,13 +36,13 @@ body {
 }
 
 .splash-section ul li:hover {
-  background-color: #3778c257;
+  background-color: var(--color-main) 57;
 }
 
 .splash-section ul .active-button {
   padding: 18px;
   color: #fff;
-  background-color: #3778c2;
+  background-color: var(--color-main);
   width: 100%;
   text-align: center;
   border-radius: 5px;
@@ -56,12 +56,12 @@ body {
 .splash-section ul .unactive-button {
   padding: 18px;
   width: 100%;
-  color: #434b54;
+  color: var(--color-text);
   text-align: center;
   border-radius: 5px;
 }
 
 .splash-section ul .unactive-button a {
   font-weight: 600;
-  color: #434b54;
+  color: var(--color-text);
 }

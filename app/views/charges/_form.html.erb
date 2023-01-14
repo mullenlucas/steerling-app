@@ -19,7 +19,7 @@
     <%= form.text_field :amount, placeholder: "Amount" %>
   </div>
 
-  <div class="categorie-input-container">
+  <div class="caterogy-input-container">
   <%= form.select :group_id, Group.all.collect {|group| [group.name, group.id]},{
   include_blank: true} , :required => 'required', class:"form-select" %>
   </div>

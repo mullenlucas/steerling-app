@@ -8,7 +8,7 @@
 }
 
 .form-nav {
-  background-color: #3778c2;
+  background-color: var(--color-main);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -32,7 +32,7 @@
 }
 
 .new-my-form a:hover {
-  background-color: #275a94;
+  background-color: var(--color-main-darker);
 }
 
 .new-my-form h2 {
@@ -40,7 +40,7 @@
 }
 
 .new-my-form input {
-  background-color: #3778c2;
+  background-color: var(--color-main);
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -68,7 +68,7 @@
 }
 
 .new-my-form input:hover {
-  background-color: #275a94;
+  background-color: var(--color-main-darker);
 }
 
 .field {
