@@ -152,6 +152,7 @@
   transition: all ease 0.5s;
   cursor: pointer;
   font-weight: 600;
+  letter-spacing: 1.4px;
 }
 
 .signout:hover {
