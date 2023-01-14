@@ -73,7 +73,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming soon...
+[Click here to access the application](https://steerling.onrender.com/)
 
 <!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
 
@@ -167,6 +167,8 @@ Give a ⭐️ if you like this project!
 - To all the collaborators for the Readme Template
 - The Microverse Team
 - Logo created at [Free Logo Design](https://freelogocreator.com/)
+- Icons taken from [Flaticon](https://www.flaticon.com/)
+- Design guidelines taken from [Gregoire Vella](https://www.behance.net/gregoirevella)'s [Snapscan template](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
