@@ -7,24 +7,26 @@
   --color-secondary-light: #5fb52357;
   --color-secondary-dark: #4a8f1a;
   --color-text: #434b54;
+  --font-nova-net: 'Net proxima nova', sans-serif;
+  --font-nova-light: 'Light proxima nova', sans-serif;
 }
 
 @font-face {
-  font-family: 'Net proxima nova', sans-serif;
+  font-family: 'Net proxima nova';
   src: url('net-proxima_nova.ttf');
 }
 
 @font-face {
-  font-family: 'Light proxima nova', sans-serif;
+  font-family: 'Light proxima nova';
   src: url('proxima-nova-light.ttf');
 }
 
 body {
-  font-family: 'Net proxima nova';
+  font-family: var(--font-nova-net);
 }
 
 .notice {
-  font-family: 'Light proxima nova';
+  font-family: var(--font-nova-light);
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
