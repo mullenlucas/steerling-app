@@ -7,6 +7,21 @@ body {
   height: 100vh;
 }
 
+.smash-btn {
+  background-color: var(--color-main);
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.smash-btn:hover {
+  background-color: var(--color-main-darker);
+}
 .splash-section {
   display: flex;
   flex-direction: column;

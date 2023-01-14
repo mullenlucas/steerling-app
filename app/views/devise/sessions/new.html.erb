@@ -2,8 +2,8 @@
   <div class="form-nav">
   <div class="new-my-form">
     <%= link_to '<', splashs_index_path %>
-    <h2>Log in</h2>
-    <%= f.submit "Log in" %>
+    <h2 class="categ-title">Log in</h2>
+    <%= f.submit "Log in", class: "smash-btn" %>
   </div>
   </div>
   
@@ -17,5 +17,3 @@
   
   <%= link_to "Forgot your password?", new_user_password_path, class: "forgot" %>
 <% end %>
-
-
